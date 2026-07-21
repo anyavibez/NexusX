@@ -1,1 +1,286 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Reels Style</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:#fff;
+}
+
+/* Navbar */
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#111;
+    border-bottom:1px solid #222;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.search{
+    width:250px;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    background:#222;
+    color:#fff;
+}
+
+/* Profile */
+.profile{
+    max-width:1100px;
+    margin:40px auto;
+    display:flex;
+    align-items:center;
+    gap:25px;
+    padding:0 20px;
+}
+
+.profile img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:3px solid #ff2d55;
+}
+
+.profile-info h1{
+    font-size:32px;
+}
+
+.profile-info p{
+    margin-top:8px;
+    color:#bbb;
+}
+
+/* Grid */
+.feed{
+    max-width:1100px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    padding:20px;
+}
+
+.card{
+    background:#181818;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.video{
+    aspect-ratio:9/16;
+    background:#000;
+}
+
+.video iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+.info{
+    padding:15px;
+}
+
+.info h3{
+    margin-bottom:6px;
+}
+
+.info p{
+    color:#aaa;
+    font-size:14px;
+}
+
+.stats{
+    margin-top:12px;
+    display:flex;
+    justify-content:space-between;
+    color:#999;
+    font-size:13px;
+}
+
+/* Footer */
+footer{
+    margin-top:60px;
+    text-align:center;
+    padding:30px;
+    color:#777;
+    border-top:1px solid #222;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">AnyaHub</div>
+
+<input class="search" placeholder="Search videos...">
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Explore</a>
+<a href="#">Reels</a>
+<a href="#">Messages</a>
+<a href="#">Profile</a>
+</nav>
+
+</header>
+
+
+<div class="feed">
+
+<!-- Card 1 -->
+<div class="card">
+<div class="video">
+<iframe src="https://voe.sx/e/zjs4zleqrhbh"
+allow="autoplay; fullscreen"
+allowfullscreen></iframe>
+</div>
+<div class="info">
+<h3>Jetski Adventure</h3>
+<p>Beautiful beach ride 🌊</p>
+<div class="stats">
+<span>❤️ 12.5K</span>
+<span>💬 340</span>
+<span>👁️ 92K</span>
+</div>
+</div>
+</div>
+
+<!-- Card 2 -->
+<div class="card">
+<div class="video">
+<iframe src="https://voe.sx/e/zjs4zleqrhbh"
+allow="autoplay; fullscreen"
+allowfullscreen></iframe>
+</div>
+<div class="info">
+<h3>Summer Ride</h3>
+<p>Another test video.</p>
+<div class="stats">
+<span>❤️ 10.3K</span>
+<span>💬 211</span>
+<span>👁️ 71K</span>
+</div>
+</div>
+</div>
+
+<!-- Card 3 -->
+<div class="card">
+<div class="video">
+<iframe src="https://voe.sx/e/zjs4zleqrhbh"
+allow="autoplay; fullscreen"
+allowfullscreen></iframe>
+</div>
+<div class="info">
+<h3>Ocean View</h3>
+<p>Testing embed layout.</p>
+<div class="stats">
+<span>❤️ 8.9K</span>
+<span>💬 180</span>
+<span>👁️ 54K</span>
+</div>
+</div>
+</div>
+
+<!-- Card 4 -->
+<div class="card">
+<div class="video">
+<iframe src="https://voe.sx/e/zjs4zleqrhbh"
+allow="autoplay; fullscreen"
+allowfullscreen></iframe>
+</div>
+<div class="info">
+<h3>Travel Vlog</h3>
+<p>Instagram style feed.</p>
+<div class="stats">
+<span>❤️ 14K</span>
+<span>💬 460</span>
+<span>👁️ 101K</span>
+</div>
+</div>
+</div>
+
+<!-- Card 5 -->
+<div class="card">
+<div class="video">
+<iframe src="https://voe.sx/e/zjs4zleqrhbh"
+allow="autoplay; fullscreen"
+allowfullscreen></iframe>
+</div>
+<div class="info">
+<h3>Beach Day</h3>
+<p>Responsive video card.</p>
+<div class="stats">
+<span>❤️ 7.4K</span>
+<span>💬 98</span>
+<span>👁️ 39K</span>
+</div>
+</div>
+</div>
+
+<!-- Card 6 -->
+<div class="card">
+<div class="video">
+<iframe src="https://voe.sx/e/zjs4zleqrhbh"
+allow="autoplay; fullscreen"
+allowfullscreen></iframe>
+</div>
+<div class="info">
+<h3>Last Test</h3>
+<p>Same video for testing.</p>
+<div class="stats">
+<span>❤️ 5.1K</span>
+<span>💬 72</span>
+<span>👁️ 21K</span>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer>
+© 2026 AnyaHub • Instagram Style Video Feed
+</footer>
+
+</body>
+</html>
